@@ -1,0 +1,193 @@
+/* header{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    background: #f8f8f8;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 3.375rem;
+    color: #143774;
+}
+
+.subtitle{
+    margin-top: 0;
+    font-size: 1rem;
+    text-align: center;
+    color: #1792D2;
+}
+
+.title-logo{
+    display: flex;
+    flex-direction: column;
+    
+    font-family: Lora;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #707070;
+    
+}
+
+nav{
+    width: 40%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+    font-family: Ubuntu;
+    font-style: bold;
+    font-size: 1rem;;
+   
+    
+} */
+
+body{
+    margin:0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* **********************************
+      Typography
+*************************************/
+
+h1,h2,h3{
+    font-family: 'Lora',sans-serif;
+    font-weight: 400;
+}
+
+h1{
+
+    color: #143774;
+    font-size: 2rem;
+
+    margin: 0px;
+}
+
+/* the Logo Subtitle H1 */
+.subtitle{
+    font-weight: 700;
+    color: #1792d2;
+    font-size: .75rem;
+    margin:0px;
+}
+
+.article-title{
+    
+
+}
+
+
+
+/* **********************************
+    Layout
+*************************************/
+
+.container{
+    width:90%;
+    max-width: 900px;
+    /* border: 1px solid pink; */
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+
+    background: #f8f8f8;
+    /* background:pink; */
+    padding: 2em 0;
+    /* display: flex; */
+    /* justify-content: center; */
+
+}
+
+
+
+
+/* **********************************
+    Navigation
+*************************************/
+
+
+nav ul{
+
+    /* border: 1px solid magenta; */
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+  
+
+}
+
+nav li{
+
+    /* border: 2px solid orange; */
+    margin-left: 2em;
+
+}
+
+nav a{
+
+    /* border: 3px solid green; */
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+
+}
+
+nav a:hover,
+nav a:focus{
+    color: #1792d2;
+}
+
+.current-page{
+    /* text-decoration: underline; */
+    /* color: red; */
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover{
+    color: #707070;
+}
+
+
+
+@media(max-width: 675px){
+    .container-nav{
+        flex-direction: column;
+    }
+    .subtitle{
+        text-align: center;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li{
+        margin-bottom: .5em;
+    }
+
+    h1{
+        margin: 0 auto;
+    }
+}
